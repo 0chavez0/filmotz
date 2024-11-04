@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 100vh; 
+    margin: 0;   
+    padding: 0;  
+    position: relative;
+    font-family: "Georgia", "Times New Roman", serif;  
+}
+header {
+    background-color: #5b5b5b;
+    width: 100%;
+}
+.navegador {
+    width: 100%;
+    background-color: #5b5b5b;
+    padding: 10px 0; /
+}
+.contenedor {
+    list-style: none;
+    display: flex;     
+    align-items: center;
+    justify-content: space-around; 
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
+
+}
+.caja-1, .caja-2, .caja-3, .caja-4, .caja-5 {
+    padding: 10px 20px;                   
+    border-radius: 5px;                 
+    transition: all 0.3s ease;           
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.caja-1:hover, .caja-2:hover, .caja-3:hover, .caja-4:hover, .caja-5:hover {
+    transform: translateY(-3px);              
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
+}
+.b {
+    text-decoration: none; 
+    font-size: 15px; 
+    display: block;                            
+    color: #ffff;
+    font-family: "Georgia", "Times New Roman", serif;  
+}
+.logo {
+    height: 50px;
+    width: auto;   
+}
+main {
+  color: black;
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: #5b5b5b;
+    position: relative;
+    bottom: 0; 
+    left: 0;
+
+}
+.redes {
+    padding: 20px 0;
+}
+.redes-cajita {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;                  
+    gap: 20px;                          
+    padding: 0;
+    margin: 0;
+}
+.caja-redes img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+   
+}
+
+.caja-redes img:hover {
+    transform: scale(1.1);
+}
+
+.derechos {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 15   px;
+    margin: 0;
+}

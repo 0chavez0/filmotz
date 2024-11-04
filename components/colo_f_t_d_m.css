@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 100vh; /* esto es la altura de la de ventana*/
+    margin: 0;   /*elimina los margenes del externos osea es los costados*/
+    padding: 0;   /*elimina los expacios internos */
+    position: relative;   
+}
+header {
+    background-color: #5b5b5b;
+    width: 100%;
+}
+.navegador {
+    width: 100%;
+    background-color: #5b5b5b;
+    padding: 10px 0; /*elimina los vetice*/
+}
+.contenedor {
+    list-style: none;
+    display: flex;       /*alinea los elementos horizontalmente */
+    align-items: center;
+    justify-content: space-around;  /*distribuye espacios entre elementos osea hace que la cajas se apile*/
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.caja-1, .caja-2, .caja-3, .caja-4, .caja-5 {
+    padding: 10px 20px;                   /* el padding se trata de espacios este seria el interno*/
+    border-radius: 5px;                   /* esto va depender si queremos que tenga un borde para 1cambiarle de color */
+    transition: all 0.3s ease;            /* esto anima*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    /* esto añade una sombra*/
+}
+
+.caja-1:hover, .caja-2:hover, .caja-3:hover, .caja-4:hover, .caja-5:hover {
+    transform: translateY(-3px);               /* esto hace que tenga una trancision que se eleve 3px */ /*otra cosa mas el hover es son las animaciones */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    /* esto añade una sombra*/
+}
+.b {
+    text-decoration: none; /* el nombre lo dice todo quita las decoraciones si se dan cuanta cuando pones un a se hace de color azul con una linea azul*/
+    font-size: 15px; /*esto es el tamaño de la letra*/
+    font-family: 'Times New Roman', Times, serif; /*esto es el tema de la letra*/
+    display: block;                            /*esto hace que que los enlaces se conviarta el bloques*/
+    color: rgb(255, 255, 255);
+}
+.logo {
+    height: 50px;
+    width: auto;   /* esto va hacer que la imagen no pieda sus porcines es como decir que si la imagen tine 20*20 se mantiene */
+}
+main {
+  color: black;
+}
+.motor_busqueda {
+    display: flex;
+    justify-content: center; /* Centrar el formulario horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.motor_busqueda div {
+    display: flex;
+    gap: 10px; /* Espacio entre los elementos de entrada y el botón */
+}
+
+#marca, #modelo {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Bordes suaves */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 150px; /* Ancho de los campos de entrada */
+}
+
+#buscarmym {
+    padding: 10px 20px; /* Relleno del botón */
+    font-size: 16px;
+    background-color: #5b5b5b; /* Color de fondo azul */
+    color:  white; /* Texto en blanco */
+    border: none; /* Sin borde extra */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor cambia a puntero para indicar que es clickeable */
+}
+
+#buscarmym:hover {
+    background-color: #5b5b5b; /* Color más oscuro al pasar el raton */
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: #5b5b5b;
+    position: fixed;
+    bottom: 0; /*esto hace que footer se ponga al final */
+    left: 0;
+    height: 18vh;
+}
+.redes {
+    padding: 20px 0;
+}
+.redes-cajita {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;                  
+    gap: 20px;                           /* esto hace que tenga espacios entre los logos */
+    padding: 0;
+    margin: 0;
+}
+.caja-redes img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+   
+}
+
+.caja-redes img:hover {
+    transform: scale(1.1);
+}
+
+.derechos {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 15   px;
+    margin: 0;
+}
